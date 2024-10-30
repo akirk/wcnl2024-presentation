@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Data Liberation with WordPress Playground</title>
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/moon.css">
+	<style>
+		:root {
+			--r-heading1-size: 3em;
+		}
+		object {
+			fill: var( --r-background-color );
+			background: var( --r-background-color );
+		}
+		.reveal ul {
+			margin-left: 0;
+			padding-left: 0;
+		}
+		ul li {
+			margin-bottom: .6em;
+			list-style-type: none;
+		}
+		ul li ul li:first-child {
+			margin-top: .2em;
+		}
+		ul li ul li {
+			margin-bottom: .2em;
+			list-style-type: "- ";
+		}
+		ul li ul li.arrow {
+			margin-left: .8em;
+			list-style-type: "→ ";
+		}
+
+		table.contact {
+			margin-top: .5em;
+		}
+		table.contact tr td, table.contact tr td a {
+			color: var( --r-main-color );
+		}
+		table.contact tr td {
+			font-size: 90%;
+			border-bottom: 0;
+		}
+		a:link {
+			text-decoration: underline;
+		}
+		a:link, a:active, a:visited {
+			color: var( --r-main-color );
+		}
+		a.highlight:link, a.highlight:active, a.highlight:visited, a.highlight:hover {
+			color: var( --r-link-color );
+		}
+		.current-fragment a.highlight:link, .current-fragment a.highlight:visited {
+			color: var( --r-link-color-hover );
+		}
+		.current-fragment, .current-fragment a:link, .current-fragment a:visited, .white {
+			color: white;
+		}
+		.small {
+			font-size: 80%;
+		}
+		.blue {
+			color: var( --r-link-color );
+		}
+		tt {
+			border-radius: 4px;
+			border: 1px solid #666;
+			padding: 2px 6px;
+		}
+	</style>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Data Liberation with WordPress Playground</h1>
+				<div style="font-size: .5em; margin-top: 1em">
+					<img src="img/alex.kirk.jpg" width="128" alt="Alex Kirk" style="border-radius: 64px"/><br/>
+					Alex Kirk
+					<table class="contact">
+						<tr><td>Blog</td><td><a href="https://alex.kirk.at/">https://alex.kirk.at/</a></td></tr>
+						<tr><td>Matrix</td><td>@alex:kirk.at</td></tr>
+						<tr><td>ActivityPub</td><td>@alex@kirk.at</td></tr>
+					</table>
+				</div>
+			</section>
+
+			<section>
+				<h2>Alex Kirk</h2>
+				<ul>
+					<li class="fragment">Born and raised in Vienna, Austria</li>
+					<li class="fragment">At <a href="https://automattic.com/" class="highlight">Automattic</a> (runs WordPress.com &amp; more) since 2014
+						<ul>
+							<li class="fragment">Engineer, leading teams around Localization, Playground, Data Liberation, and previously, Matrix</li>
+							<li class="fragment">Sponsored to contribute to WordPress.org in Meta and Polyglots</li>
+						</ul>
+					</li>
+					<li class="fragment">Sideprojects in the decentralized web space
+						<ul>
+							<li class="fragment"><a href="https://wordpress.org/plugins/friends/" class="highlight">Friends Plugin</a>: Make your blog your own hub for subscribing to and interacting with others via RSS, ActivityPub, ...</li>
+							<li class="fragment"><a href="https://wordpress.org/plugins/enable-mastodon-apps/" class="highlight">Enable Mastodon Apps</a>: Use <a href="https://tapbots.com/ivory/">Ivory</a>, <a href="https://github.com/tuskyapp/Tusky/">Tusky</a>, ... with your site</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Agenda</h2>
+				<ul>
+					<li class="fragment"></li>
+				</ul>
+			</section>
+
+			<section>
+				<h1>Thank You!</h1>
+				<h2>Questions?</h2>
+				<p>
+					<a href="https://alex.kirk.at/wcnl2024/" class="highlight">https://alex.kirk.at/wcnl2024/</a><br/>
+					<span class="small">(Lots of links in the slides)</span>
+					</p>
+				<object data="img/qr-alex-kirk-at.svg" type="image/svg+xml"  width="200" height="200"></object><br/>
+			</section>
+		</div>
+	</div>
+	<script src="dist/reveal.js"></script>
+	<script src="dist/plugin/notes/notes.js"></script>
+	<script>
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: true,
+			progress: true,
+			hash: true,
+			autoPlayMedia: true,
+			slideNumber: 'c/t',
+			width: 1200,
+		}).then( () => {
+		});
+		const videos = document.querySelectorAll('video');
+
+		videos.forEach(function(video) {
+			video.addEventListener('click', function() {
+				video.currentTime = 0; // Resets video playback to the beginning
+				video.play(); // Starts the video playback
+			});
+		});
+
+	</script>
+</body>
+</html>
