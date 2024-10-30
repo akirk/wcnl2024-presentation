@@ -4,6 +4,14 @@ https://netherlands.wordcamp.org/2024/session/liberating-data-with-wordpress-pla
 
 ## Liberating data with WordPress Playground in a Browser Extension
 
-Gepresenteerd door Alex Kirk
-zaterdag 11:45 AM CET
+11:45 - 12:30
 
+Speakers:
+    Alex Kirk
+
+Tracks:
+    Track 2
+
+Categories:
+    Development
+    English
