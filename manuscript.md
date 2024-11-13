@@ -7,7 +7,6 @@ Goal of the talk:
 - WordPress is server-side only software!
 - Data exports from platforms are useless!
 
-
 # What is Data Liberation?
 It means the ability to use your data that you have in one system in another system. Usually, this means that you would export your data from one system and then import it into another system.
 
@@ -46,10 +45,18 @@ We also have the advantage of working with the data as it is visible to the user
 - E-Commerce (Products)
 - Social Networks (Posts, Connections)
 
-##
+## Data Formats
 
 When importing to WordPress we want to give users choice. WordPress itself has support for a number of post types like pages or posts but beyond that we rely on plugins. Because of the ecosystem there is a variety of plugins available in the different areas, for example plugins providing a shopping system. A Data liberation project should not make these decisions for the user.
 
+### How to achieve this?
+We define some generic post types and attributes that we think are useful. The user can then assist the system by selecting where on the page the respective fields can be found.
+
+For example: This is the product title, this is the price.
+
+We have a few ideas for post types but we're hoping for community involvement to help us discover and define more.
+
+When this generic type has been imported, the user can choose a plugin that can handle this type of content. We need user contributions for both the selection of plugins, as well as developer contributions to make their plugins capable of accepting these generic types.
 
 ## Advantages of a Live WordPress
 
