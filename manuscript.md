@@ -1,13 +1,26 @@
-# What is Data Liberation?
-Describes the ability to use your data that has been entered in one system in another system. Typically, this means exporting your data from one system and importing it into another system.
+Goal of the talk:
+- Introduce the Try WordPress extension
+- Explain Playground and the benefits
 
-Since we're talking here about this in the context of WordPress, we are talking about data in web apps.
+# Gather attention
+- Trying WordPress Plugins is risky!
+- WordPress is server-side only software!
+- Data exports from platforms are useless!
+
+
+# What is Data Liberation?
+It means the ability to use your data that you have in one system in another system. Usually, this means that you would export your data from one system and then import it into another system.
+
+Since we're on a WordCamp and talking about WordPress, I mostly refer to web apps.
 
 ## Getting Data Out
-Depending on legislation, some companies are required to provide you with a copy of your data in a format that can be used by other systems. This is called data portability. When there is no such requirement, companies rarely provide this feature.
+Depending on legislation, some companies are required to provide you with a copy of your data in a format that can be used by other systems. This is called data portability.
+
+When there is no such requirement, companies rarely provide this feature.
+
 There are differences in how accessible this feature is. Sometimes it is implemented as a self-service feature, sometimes you have to contact support to get your data. Often it takes a while to get your data and it is delivered as a file or zipped files and directories.
 
-In practice, importing the can be tricky, as the data may be stored in a format that is not easily imported into another system. There is no incentive for the industry to define common standards for data export and import. This is because companies only want to encourage the inflow to their company, not the outflow.
+In practice, importing the can be tricky, as the data may be stored in a format that cannot easily be imported into another system. There is little incentive for the industry to define common standards for data export and import. This is because companies only want to encourage the inflow to their company, not the outflow.
 
 Defining a common format would restrict the ability to innovate and differentiate from competitors. Such a format would represent a lowest common denominator, resulting in a subpar experience and a lossy migration.
 
@@ -42,7 +55,7 @@ When importing to WordPress we want to give users choice. WordPress itself has s
 
 - Live Previews of the imported data
 - Plugins can use the typical mechanisms (WordPress hooks) to receive data and import it to their own data structures
-
+- No need to find suitable file formats for storing and restoring the data
 
 
 # Try WordPress Extension
@@ -55,4 +68,7 @@ Build a test driven infrastructure that allows easy repeatable testing of the im
 - Contribute to exporting recipes
 - Contribute to the extension itself
 - Add support to plugins as desired targets
+
+
+# Where can you help?
 
