@@ -4,10 +4,33 @@
 	<meta charset="utf-8">
 	<title>Data Liberation with WordPress Playground</title>
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/moon.css">
+	<link rel="stylesheet" href="dist/theme/simple.css">
+	<style class='wp-fonts-local'>
+	@font-face{font-family:Raleway;font-style:normal;font-weight:700;font-display:fallback;src:url('fonts/raleway-bold.woff') format('woff');}
+	@font-face{font-family:Raleway;font-style:normal;font-weight:800;font-display:fallback;src:url('fonts/raleway-extrabold.woff') format('woff');}
+	@font-face{font-family:Raleway;font-style:normal;font-weight:200;font-display:fallback;src:url('fonts/raleway-extralight.woff') format('woff');}
+	@font-face{font-family:Raleway;font-style:normal;font-weight:900;font-display:fallback;src:url('fonts/raleway-heavy.woff') format('woff');}
+	@font-face{font-family:Raleway;font-style:normal;font-weight:300;font-display:fallback;src:url('fonts/raleway-light.woff') format('woff');}
+	@font-face{font-family:Raleway;font-style:normal;font-weight:500;font-display:fallback;src:url('fonts/raleway-medium.woff') format('woff');}
+	@font-face{font-family:Raleway;font-style:normal;font-weight:400;font-display:fallback;src:url('fonts/raleway-regular.woff') format('woff');}
+	@font-face{font-family:Raleway;font-style:normal;font-weight:600;font-display:fallback;src:url('fonts/raleway-semibold.woff') format('woff');}
+	@font-face{font-family:Raleway;font-style:normal;font-weight:100;font-display:fallback;src:url('fonts/raleway-thin.woff') format('woff');}
+	@font-face{font-family:"PP Neue Machina";font-style:normal;font-weight:500;font-display:fallback;src:url('fonts/PPNeueMachina-PlainMedium.woff') format('woff');}
+	@font-face{font-family:"PP Neue Machina";font-style:normal;font-weight:800;font-display:fallback;src:url('fonts/PPNeueMachina-PlainUltrabold.woff') format('woff');}
+	@font-face{font-family:"PP Neue Machina";font-style:normal;font-weight:400;font-display:fallback;src:url('fonts/PPNeueMachina-PlainRegular.woff') format('woff');}
+	@font-face{font-family:"PP Neue Machina";font-style:normal;font-weight:300;font-display:fallback;src:url('fonts/PPNeueMachina-PlainLight.woff') format('woff');}
+	@font-face{font-family:"PP Neue Machina";font-style:normal;font-weight:100;font-display:fallback;src:url('fonts/PPNeueMachina-PlainThin.woff') format('woff');}
+	</style>
 	<style>
 		:root {
-			--r-heading1-size: 3em;
+			--r-background-color: #F9EFE4;
+			--r-main-color: #666;
+			--r-main-font-size: 30px;
+			--r-heading-color: #000;
+			--r-heading1-size: 2em;
+			--r-main-font: "PP Neue Machina", sans-serif;
+			--r-heading-font: "PP Neue Machina", sans-serif;
+			--r-heading-font-weight: 700;
 		}
 		object {
 			fill: var( --r-background-color );
@@ -56,7 +79,7 @@
 			color: var( --r-link-color-hover );
 		}
 		.current-fragment, .current-fragment a:link, .current-fragment a:visited, .white {
-			color: white;
+			color: #000;
 		}
 		.small {
 			font-size: 80%;
@@ -85,6 +108,7 @@
 						<tr><td>ActivityPub</td><td>@alex@kirk.at</td></tr>
 					</table>
 				</div>
+				<img src="img/WCNL24-Logo-01-Full.webp" alt="" style="position: absolute; bottom: 0; left:0; width: 120px; height: auto">
 			</section>
 
 			<section>
