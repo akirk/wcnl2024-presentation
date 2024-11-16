@@ -5,8 +5,8 @@ Goal of the talk:
 # Gather attention
 - Trying WordPress Plugins is risky!
 - WordPress is server-side only software!
-- Data exports from platforms are useless!
 - I don't need data liberation!
+- Data exports from platforms are useless!
 
 # Overview
 - What is Data Liberation? Why is it meaning full to me? What can be WordPress' role?
