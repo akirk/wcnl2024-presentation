@@ -28,6 +28,7 @@
 			--r-main-font-size: 40px;
 			--r-heading-color: #000;
 			--r-heading1-size: 2em;
+			--r-heading2-size: 1.7em;
 			--r-main-font: "PP Neue Machina", sans-serif;
 			--r-heading-font: "PP Neue Machina", sans-serif;
 			--r-heading-font-weight: 700;
@@ -72,13 +73,13 @@
 		a:link, a:active, a:visited {
 			color: var( --r-main-color );
 		}
-		a.highlight:link, a.highlight:active, a.highlight:visited, a.highlight:hover {
+		a.highlight:any-link, .highlight:hover {
 			color: var( --r-link-color );
 		}
-		.current-fragment a.highlight:link, .current-fragment a.highlight:visited {
+		.current-fragment a.highlight:any-link {
 			color: var( --r-link-color-hover );
 		}
-		.current-fragment, .current-fragment a:link, .current-fragment a:visited, .white {
+		.current-fragment, .current-fragment a:any-link, .black, .black a:any-link {
 			color: #000;
 		}
 		.small {
@@ -183,7 +184,149 @@
 					<li class="fragment">Unlocked</li>
 					<li class="fragment">Widely supported (file) format</li>
 					<li class="fragment">Transformable into other formats</li>
-				</ul-->
+				</ul>
+			</section>
+
+			<section>
+				<h2>Common Platforms</h2>
+
+				<ul>
+					<li class="fragment">Allow export if legislation requires it</li>
+					<li class="fragment">No common export file format</li>
+					<li class="fragment">Exports take time, sometimes through support</li>
+					<li class="fragment">Partial data (e.g. no friendship data)</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>WordPress as Liberation Target</h2>
+
+				<ul>
+					<li class="fragment">Open Source</li>
+					<li class="fragment">Choice inside the WordPress ecosystem (plugins)</li>
+					<li class="fragment">Many platforms import from WordPress</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>WordPress Importers</h2>
+
+				<ul style="columns: 2;"class="black">
+					<li><a href="https://github.com/WordPress/blogger-importer">Blogger</a></li>
+					<li><a href="https://github.com/WordPress/movabletype-importer">Movabletype</a></li>
+					<li><a href="https://github.com/WordPress/opml-importer">OPML</a></li>
+					<li><a href="https://github.com/WordPress/rss-importer">RSS</a></li>
+					<li><a href="https://github.com/WordPress/textpattern-importer">Textpattern</a></li>
+					<li><a href="https://github.com/WordPress/tumblr-importer">Tumblr</a></li>
+					<li><a href="https://github.com/WordPress/wordpress-importer">WordPress</a></li>
+					<li><a href="https://github.com/automattic/substack-importer">Substack</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>WordPress Importer Status Quo</h2>
+
+				<ul>
+					<li class="fragment">One-time action for users</li>
+					<li class="fragment">Contribution dilemma
+						<ul>
+							<li>Fix your own import</li>
+							<li>No incentive to fix the problem in the importer</li>
+						</ul>
+					</li>
+					<li class="fragment">→ Not highly maintained</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Data Representation</h2>
+
+				<ul style="text-align: center">
+					<li class="fragment">Import from Platform Export Files</li>
+					<li class="fragment">vs.</li>
+					<li class="fragment">Export File for WordPress</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Import from Platform Exports</h2>
+
+				<ul>
+					<li class="fragment">Huge variety of file formats</li>
+					<li class="fragment">Not well-defined (no standards)</li>
+					<li class="fragment">Change over time</li>
+					<li class="fragment">→ Needs maintenance</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Export File for WordPress</h2>
+
+				<ul>
+					<li class="fragment">Platforms don't provide it</li>
+					<li class="fragment">Transform platform exports into WXR?</li>
+					<li class="fragment">WXR format is text-only (no attachments)</li>
+					<li class="fragment">Content-types not supported by WordPress natively → ?</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>WordPress Playground<br>to the rescue!</h2>
+			</section>
+
+			<section>
+				<h2>WordPress Playground</h2>
+
+				<ul>
+					<li class="fragment">WordPress running in the browser</li>
+					<li class="fragment">No server-side code running</li>
+					<li class="fragment">Can run offline</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Detour: Why is WordPress Playground a big deal?</h2>
+				<h2 class="fragment">(for you!)</h2>
+			</section>
+
+			<section>
+				<h2>WordPress Playground</h2>
+
+				<ul>
+					<li class="fragment"><b>Try plugins</b> without risking your live site</li>
+					<li class="fragment"><b>Showcase a website</b> before you have a host for it</li>
+					<li class="fragment">Run <b>beta versions of WordPress</b> or plugins to test them</li>
+					<li class="fragment"><b>Translate a live plugin</b> instead of guessing its UI</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Playground as a Developer Tool</h2>
+
+				<ul>
+					<li class="fragment">Query API</li>
+					<li class="fragment">Blueprints</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Playground as a Demo Tool</h2>
+
+				<ul>
+					<li class="fragment">Link a full demo WordPress</li>
+					<li class="fragment">Embed WordPress in a Gutenberg block</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Why is WordPress Playground a solution?</h2>
+
+				<ul>
+					<li class="fragment">Can be easily reset → just try again!</li>
+					<li class="fragment">Side-by-side view with a browser extension</li>
+					<li class="fragment">Liberate data into a live WordPress</li>
+					<li class="fragment">→ Plugins can handle non-native types</li>
+				</ul>
 			</section>
 
 
