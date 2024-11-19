@@ -32,6 +32,7 @@
 			--r-main-font: "PP Neue Machina", sans-serif;
 			--r-heading-font: "PP Neue Machina", sans-serif;
 			--r-heading-font-weight: 700;
+			--r-link-color: #0073aa;
 		}
 		object {
 			fill: var( --r-background-color );
@@ -57,6 +58,11 @@
 			list-style-type: "→ ";
 		}
 
+		h2 a:any-link, h2 a:hover {
+			color: var( --r-heading-color );
+			text-decoration: none;
+		}
+
 		table.contact {
 			margin-top: .5em;
 		}
@@ -73,8 +79,9 @@
 		a:link, a:active, a:visited {
 			color: var( --r-main-color );
 		}
-		a.highlight:any-link, .highlight:hover {
+		a.highlight:any-link, .highlight, .highlight:hover {
 			color: var( --r-link-color );
+			font-weight: bold;
 		}
 		.current-fragment a.highlight:any-link {
 			color: var( --r-link-color-hover );
@@ -152,17 +159,17 @@
 				<ul>
 					<li class="fragment">What is Data Liberation?</li>
 					<li class="fragment">Big Detour: WordPress Playground</li>
-					<li class="fragment">Try WordPress browser extension</li>
+					<li class="fragment">"Try WordPress" browser extension</li>
 
 				</ul>
 			</section>
 
 			<section>
-				<h2>At the end of this talk</h2>
- 				<p>you'll know</p>
-				<ul>
-					<li class="fragment">how to use Playground for experiments</li>
-					<li class="fragment">how typical challenges of data liberation can be overcome</li>
+				<h2>At the end of this talk<br>you'll know</h2>
+				<ul style="text-align: center">
+					<li class="fragment">How to use Playground for experiments and demos</li>
+					<li class="fragment">How data liberation applies to you</li>
+					<li class="fragment">How you can be part of this</li>
 
 				</ul>
 			</section>
@@ -196,6 +203,12 @@
 					<li class="fragment">Exports take time, sometimes through support</li>
 					<li class="fragment">Partial data (e.g. no friendship data)</li>
 				</ul>
+			</section>
+
+			<section>
+				<h5>Placeholder</h5>
+				<h2>Anotated Twitter screen shot</h2>
+				<p>Tweets can be exported, follows can't</p>
 			</section>
 
 			<section>
@@ -263,7 +276,7 @@
 				<h2>Export File for WordPress</h2>
 
 				<ul>
-					<li class="fragment">Platforms don't provide it</li>
+					<li class="fragment">Platforms don't provide <u>W</u>ordPress e<u>X</u>tended <u>R</u>SS files</li>
 					<li class="fragment">Transform platform exports into WXR?</li>
 					<li class="fragment">WXR format is text-only (no attachments)</li>
 					<li class="fragment">Content-types not supported by WordPress natively → ?</li>
@@ -290,6 +303,12 @@
 			</section>
 
 			<section>
+				<h5>Placeholder</h5>
+				<h2>Playground screen shot</h2>
+				<p>Highlight different playground sections</p>
+			</section>
+
+			<section>
 				<h2>WordPress Playground</h2>
 
 				<ul>
@@ -303,10 +322,39 @@
 			<section>
 				<h2>Playground as a Developer Tool</h2>
 
-				<ul>
-					<li class="fragment">Query API</li>
-					<li class="fragment">Blueprints</li>
+				<ul style="text-align: center">
+					<li class="fragment"><a href="https://wordpress.github.io/wordpress-playground/developers/apis/query-api">Query API</a></li>
+					<li class="fragment"><a href="https://wordpress.github.io/wordpress-playground/developers/apis/javascript-api">Javascript API</a></li>
+					<li class="fragment"><a href="https://wordpress.github.io/wordpress-playground/blueprints/">Blueprints</a></li>
 				</ul>
+			</section>
+
+			<section>
+				<h5>Playground</h5>
+				<h2><a href="https://wordpress.github.io/wordpress-playground/developers/apis/query-api">Query API</a></h2>
+				<ul>
+					<li class="fragment">https://playground.wordpress.net/<a href="https://playground.wordpress.net/?plugin=friends" class="highlight">?plugin=friends</a></li>
+					<li class="fragment">https://playground.wordpress.net/<a href="https://playground.wordpress.net/?theme=tove" class="highlight">?theme=tove</a></li>
+					<li class="fragment">https://playground.wordpress.net/<a href="https://playground.wordpress.net/?language=nl_NL" class="highlight">?language=nl_NL</a></li>
+					<li class="fragment">https://playground.wordpress.net/<a href="https://playground.wordpress.net/?wp=nightly" class="highlight">?wp=nightly</a></li>
+					<li class="fragment">https://playground.wordpress.net/<a href="https://playground.wordpress.net/?mode=seamless" class="highlight">?mode=seamless</a></li>
+					<li class="fragment">... <span class="fragment">?multisite=yes</span> <span class="fragment">?url=/landingpage</span> <span class="fragment">?blueprint-url=</span> </li>
+				</ul>
+			</section>
+
+			<section>
+				<h5>Playground</h5>
+				<h2><a href="https://wordpress.github.io/wordpress-playground/developers/apis/javascript-api">Javascript API</a></h2>
+				<ul>
+					<li class="fragment">Embed Playground and control it</li>
+					<li class="fragment"><a href="https://translate.wordpress.org/projects/wp-plugins/friends/dev/de/default/playground/">Translate Live was created with it</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h5>Placeholder</h5>
+				<h2>Translate Live Demo</h2>
+				<p>Load Playground+Friends, translate a string</p>
 			</section>
 
 			<section>
@@ -319,7 +367,23 @@
 			</section>
 
 			<section>
-				<h2>Why is WordPress Playground a solution?</h2>
+				<h5>Playground</h5>
+				<h2><a href="https://wordpress.github.io/wordpress-playground/blueprints/">Blueprints</a></h2>
+				<ul>
+					<li class="fragment">Configure WordPress with plugins, theme, site data</li>
+					<li class="fragment">Blueprint = JSON file with "steps"</li>
+					<li class="fragment">Visual Tool: <a href="https://akirk.github.io/playground-step-library/">Playground Step Library</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h5>Placeholder</h5>
+				<h2>Step Library Demo</h2>
+				<p>Add some steps, load playground</p>
+			</section>
+
+			<section>
+				<h2>Why is WordPress Playground a solution for data liberation?</h2>
 
 				<ul>
 					<li class="fragment">Can be easily reset → just try again!</li>
@@ -329,6 +393,76 @@
 				</ul>
 			</section>
 
+			<section>
+				<h5>Placeholder</h5>
+				<h2>Try WordPress Demo</h2>
+				<p>Load site, select post fields, import with preview</p>
+			</section>
+
+			<section>
+				<h2>How it works</h2>
+
+				<ul>
+					<li class="fragment">Browser has access your data (logged in)</li>
+					<li class="fragment">You tell the extension which data to liberate</li>
+					<li class="fragment">Data gets directly sent to WordPress (Playground)</li>
+				</ul>
+			</section>
+			<section>
+				<h2>WordPress cannot handle natively</h2>
+
+				<ul>
+					<li class="fragment">Contact Forms</li>
+					<li class="fragment">Restaurant Menus</li>
+					<li class="fragment">Products</li>
+					<li class="fragment">...</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Plugins can handle that</h2>
+
+				<ul>
+					<li class="fragment">Liberate Data = Free choice</li>
+					<li class="fragment">Select your favorite plugin for XYZ</li>
+					<li class="fragment">Fails? Try another plugin and try again</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Building the extension</h2>
+
+				<ul>
+					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress">https://github.com/WordPress/try-wordpress</a></li>
+					<li class="fragment">Currently: Firefox or Chrome</li>
+					<li class="fragment">Loads playground.wordpress.net in the sidebar</li>
+					<li class="fragment">Assisted export from any website</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>After the liberation</h2>
+
+				<ul>
+					<li class="fragment">View and try it directly on playground.wp.net</li>
+					<li class="fragment">Export to a hosted WordPress</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>How you can help</h2>
+
+				<ul>
+					<li class="fragment">Share your assisted export</li>
+					<li class="fragment">Review assisted exports</li>
+					<li class="fragment">Make your plugin ready to receive liberated data</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>WordPress Playground will improve your WordPress experience</h2>
+				<h3>→ Try <a href="https://playground.wordpress.net">playground.wordpress.net</a> !</h3>
+			</section>
 
 			<section>
 				<h1>Thank You!</h1>
