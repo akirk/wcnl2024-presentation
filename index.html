@@ -441,7 +441,13 @@
 			</section>
 
 			<section>
-				<video data-autoplay data-src="img/data-liberation-i1.mp4" type="video/mp4" alt="Try WordPress Demo: Load site, select post fields, import with preview"></video>
+				<h2>Try WordPress Interface</h2>
+				<video data-autoplay data-src="img/try-wordpress-interface.mp4" type="video/mp4" alt="Try WordPress Interface"></video>
+			</section>
+
+			<section>
+				<h2 sty>Liberating from Wix</h2>
+				<video data-autoplay data-src="img/wix-try-wordpress-demo.mp4" type="video/mp4" alt="Try WordPress Demo: Load site, select post fields, import with preview"></video>
 			</section>
 
 			<section>
@@ -453,6 +459,7 @@
 					<li class="fragment">Data gets directly sent to WordPress (Playground)</li>
 				</ul>
 			</section>
+
 			<section>
 				<h2>WordPress cannot handle natively</h2>
 
@@ -543,13 +550,14 @@
 	<script src="dist/plugin/notes/notes.js"></script>
 	<script>
 		Reveal.initialize({
-			controls: true,
-			controlsTutorial: true,
-			progress: true,
+			controls: false,
+			controlsTutorial: false,
+			progress: false,
 			hash: true,
 			autoPlayMedia: true,
-			slideNumber: 'c/t',
+			// slideNumber: 'c/t',
 			width: 1200,
+
 		}).then( () => {
 		});
 		const videos = document.querySelectorAll('video');
