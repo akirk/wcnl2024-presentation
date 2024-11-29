@@ -151,13 +151,14 @@
 			</section>
 
 			<section>
-				<h2>Data exports from platforms are useless!</h2>
+				<h2>Why bother? Platforms have Data exports!</h2>
 			</section>
 
 			<section>
-				<h2>Agenda</h2>
-				<ul>
-					<li class="fragment">What is Data Liberation?</li>
+				<h2>In my talk today</h2>
+				<ul style="text-align: center">
+					<li class="fragment">Disprove these statements</li>
+					<li class="fragment">Explain Data Liberation</li>
 					<li class="fragment">Big Detour: WordPress Playground</li>
 					<li class="fragment">"Try WordPress" browser extension</li>
 
@@ -178,31 +179,36 @@
 				<h2>What is Data Liberation?</h2>
 
 				<object data="img/liberate-data.svg" type="image/svg+xml"  width="400" height="400"></object>
-				<!--ul>
-					<li class="fragment">Describes the ability to use your data that has been entered in one system in another system.</li>
-					<li class="fragment">Typically, this means exporting your data from one system and importing it into another system.</li>
-				</ul-->
+				<ul>
+					<li class="fragment">Move Your Own Data: Platform → Any Other Platform</li>
+					<li class="fragment">6.8 Social Media accounts / internet user <small>(source: <a href="https://datareportal.com/social-media-users">Kepios</a>)</small></li>
+				</ul>
 			</section>
 
 			<section>
 				<h2>Liberated = Free Data</h2>
 
 				<ul>
-					<li class="fragment">Unlocked</li>
+					<li class="fragment">Unlocked = Choice of Destination</li>
 					<li class="fragment">Widely supported (file) format</li>
 					<li class="fragment">Transformable into other formats</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Common Platforms</h2>
+				<h2>Exports from Typical Platforms</h2>
 
 				<ul>
-					<li class="fragment">Allow export if legislation requires it</li>
-					<li class="fragment">No common export file format</li>
-					<li class="fragment">Exports often take hours or days, sometimes via support</li>
+					<li class="fragment">Only available if forced by legislation</li>
+					<li class="fragment">No common file format</li>
+					<li class="fragment">Take hours or days</li>
+					<li class="fragment">Requested from support</li>
 					<li class="fragment">Partial data (e.g. no friendship data)</li>
 				</ul>
+			</section>
+
+			<section>
+				<img src="img/request-x-data.png" alt="Screenshot of the flow of how to request data from X">
 			</section>
 
 			<section>
@@ -210,7 +216,6 @@
 			</section>
 
 			<section>
-				<h2>Twitter / X: Not bad</h2>
 				<img src="img/twitter-export-annotated.png" alt="Some parts of Twitter are exported badly" />
 			</section>
 
@@ -220,7 +225,7 @@
 			</section>
 
 			<section>
-				<h2>WordPress as Liberation Target</h2>
+				<h2>WordPress as<br>Liberation Target</h2>
 
 				<ul>
 					<li class="fragment">Open Source</li>
@@ -248,7 +253,7 @@
 			</section>
 
 			<section>
-				<h2>WordPress Importer Status Quo</h2>
+				<h2>WordPress Importer<br>Status Quo</h2>
 
 				<ul>
 					<li class="fragment">One-time action for users</li>
@@ -266,9 +271,9 @@
 				<h2>Data Representation</h2>
 
 				<ul style="text-align: center">
-					<li>Import from Platform Export Files</li>
-					<li>vs.</li>
-					<li class="fragment">Export File for WordPress</li>
+					<li class="fragment" data-fragment-index="1">Import from Platform Export Files</li>
+					<li class="fragment" data-fragment-index="2">vs.</li>
+					<li class="fragment" data-fragment-index="2">Export File for WordPress</li>
 				</ul>
 			</section>
 
@@ -310,7 +315,7 @@
 
 			<section>
 				<h2>Detour: Why is WordPress Playground a big deal?</h2>
-				<h2 class="fragment">(for you!)</h2>
+				<h2 class="fragment">For You!</h2>
 			</section>
 
 			<section>
@@ -334,7 +339,7 @@
 				<ul style="text-align: center">
 					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/developers/apis/query-api">Query API</a>: Set it up via URL</li>
 					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/developers/apis/javascript-api">Javascript API</a>: Embed and control it</li>
-					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/blueprints/">Blueprints</a>: Complex setups</li>
+					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/blueprints/">Blueprints</a>: For complexer setups</li>
 				</ul>
 			</section>
 
@@ -362,7 +367,6 @@
 			</section>
 
 			<section>
-				<h2>Translate Live Demo</h2>
 				<video data-autoplay data-src="img/translate-live.mp4" type="video/mp4" alt="Load Playground+Friends, translate a string"></video>
 			</section>
 
@@ -396,27 +400,28 @@
 				<h2><a target="_blank" href="https://wordpress.github.io/wordpress-playground/blueprints/">Blueprints</a></h2>
 				<ul>
 					<li class="fragment">Pre-Configure WordPress with plugins, theme, site data <ul>
-						<li class="arrow">a single playground.wordpress.net link</li>
+						<li class="arrow">a single <a href="https://playground.wordpress.net/">playground.wordpress.net</a> link</li>
 					</ul></li>
 					<li class="fragment">Blueprint = JSON file with "steps", for example:<br>
 						<tt>{ "step": "installPlugin", "slug": "friends" }</tt></li>
 					<li class="fragment">
-						<a href="https://wordpress.github.io/wordpress-playground/blueprints/steps/">27 different steps exist today</a></li>
+						<a href="https://wordpress.github.io/wordpress-playground/blueprints/steps/">27 different types of steps available</a></li>
 					<li class="fragment">Visual Tool: <a target="_blank" href="https://akirk.github.io/playground-step-library/">Playground Step Library</a><ul>
-						<li class="arrow">provides even more steps</li>
+						<li class="arrow">Provides more easy to use &amp; powerful steps</li>
 					</ul></li>
 
 				</ul>
 			</section>
 
 			<section>
-				<h2>Examples: <a target="_blank" href="https://github.com/WordPress/blueprints/">Blueprints Gallery</a></h2>
+				<h2>Showcase: <a target="_blank" href="https://github.com/WordPress/blueprints/">Blueprints Gallery</a></h2>
 				<ul>
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Ffriends-cors%2Fblueprint.json&random=apafbcqkwf">Feed Reader with the Friends Plugin</a></li>
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fstylish-press%2Fblueprint.json&random=apafbcqkwf">A Woo store with custom theme, content, and products</a></li>
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fcreate-block-theme%2Fblueprint.json&random=apafbcqkwf">Use the Create Block Theme and start editing right away</a></li>
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fwpgraphql%2Fblueprint.json&random=apafbcqkwf">WPGraphQL to query WordPress</a></li>
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fposts-via-wp-cli%2Fblueprint.json&random=apafbcqkwf">Use wp-cli command to add posts</a></li>
+					<li class="fragment">20 more and growing</li>
 				</ul>
 
 			</section>
@@ -461,16 +466,16 @@
 				<h2>Liberating Data with Playground</h2>
 
 				<ul>
-					<li class="fragment">You navigate to the site → No URLs</li>
+					<li class="fragment">You navigate to the site → No entering of URLs</li>
 					<li class="fragment">You help locate the data → Universal</li>
 					<li class="fragment">Data gets directly sent to WordPress (Playground)</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>What about</h2>
+				<h2>What about:</h2>
 
-				<ul>
+				<ul style="text-align: center">
 					<li class="fragment">Contact Forms</li>
 					<li class="fragment">Restaurant Menus</li>
 					<li class="fragment">Products</li>
@@ -494,8 +499,8 @@
 				<ul>
 					<li class="fragment">Logged in = access to your view of your data</li>
 					<li class="fragment">Logged in = access to the service's own APIs</li>
-					<li class="fragment">No blocking: User views their own site</li>
-					<li class="fragment">Live Preview</li>
+					<li class="fragment">No blocking: User entitled to view their own site</li>
+					<li class="fragment">Live Preview of imported data</li>
 					<li class="fragment">Interactive while importing: choose a plugin</li>
 				</ul>
 			</section>
@@ -556,6 +561,43 @@
 				</ul>
 			</section>
 
+
+			<section data-transition="slide-in fade-out">
+				<h2>Trying WordPress Plugins is risky for your site!</h2>
+			</section>
+
+			<section data-transition="fade-in slide-out">
+				<h4>Trying WordPress Plugins is risky for your site!</h4>
+				<h2>Run any plugin risk-free with WordPress Playground</h2>
+			</section>
+
+			<section data-transition="slide-in fade-out">
+				<h2>WordPress is server-side only software!</h2>
+			</section>
+
+			<section data-transition="fade-in slide-out">
+				<h4>WordPress is server-side only software!</h4>
+				<h2>Not anymore: Run WordPress in your browser with WordPress Playground</h2>
+			</section>
+
+			<section data-transition="slide-in fade-out">
+				<h2>I don't need data liberation!</h2>
+			</section>
+
+			<section data-transition="fade-in slide-out">
+				<h4>I don't need data liberation!</h4>
+				<h2>Moving your data into WordPress opens paths to other platforms</h2>
+			</section>
+
+			<section data-transition="slide-in fade-out">
+				<h2>Why bother? Platforms have Data exports!</h2>
+			</section>
+
+			<section data-transition="fade-in slide-out">
+				<h4>Why bother? Platforms have Data exports!</h4>
+				<h2>Only some do, and often omit the valuable meta data like relationships</h2>
+			</section>
+
 			<section>
 				<h2>Liberate your data or not, but try WordPress Playground!</h2>
 
@@ -577,7 +619,7 @@
 			progress: false,
 			hash: true,
 			autoPlayMedia: true,
-			// slideNumber: 'c/t',
+			slideNumber: 'c/t',
 			width: 1200,
 			plugins: [ RevealNotes, RevealSearch ]
 		}).then( () => {
