@@ -157,8 +157,8 @@
 			<section>
 				<h2>In my talk today</h2>
 				<ul style="text-align: center">
-					<li class="fragment">Disprove these statements</li>
-					<li class="fragment">Explain Data Liberation</li>
+					<li class="fragment">Disprove these statements:</li>
+					<li class="fragment">Data Liberation?</li>
 					<li class="fragment">Big Detour: WordPress Playground</li>
 					<li class="fragment">"Try WordPress" browser extension</li>
 
@@ -181,8 +181,12 @@
 				<object data="img/liberate-data.svg" type="image/svg+xml"  width="400" height="400"></object>
 				<ul>
 					<li class="fragment">Move Your Own Data: Platform → Any Other Platform</li>
-					<li class="fragment">6.8 Social Media accounts / internet user <small>(source: <a href="https://datareportal.com/social-media-users">Kepios</a>)</small></li>
+					<li class="fragment">6.8 Social Media accounts per internet user <small>(source: <a href="https://datareportal.com/social-media-users">Kepios</a>)</small></li>
 				</ul>
+				<aside class="notes">
+					Get your data out of silos<br>
+					Your data is locked into 7 social media accounts
+				</aside>
 			</section>
 
 			<section>
@@ -193,6 +197,10 @@
 					<li class="fragment">Widely supported (file) format</li>
 					<li class="fragment">Transformable into other formats</li>
 				</ul>
+				<aside class="notes">
+					When the data is liberated you have choices<br>
+					A free format opens up many platforms as targets because it can be converted
+				</aside>
 			</section>
 
 			<section>
@@ -202,9 +210,14 @@
 					<li class="fragment">Only available if forced by legislation</li>
 					<li class="fragment">No common file format</li>
 					<li class="fragment">Take hours or days</li>
-					<li class="fragment">Requested from support</li>
+					<li class="fragment">Sometimes need to be requested from support</li>
 					<li class="fragment">Partial data (e.g. no friendship data)</li>
 				</ul>
+				<aside class="notes">
+					Platforms don't have an interest in agreeing on a format. They want to keep you in their platform.<br>
+					They make it inconvenient to export the data by taking a lot of time, or requiring you to contact support to get your export.<br>
+					And because you are mostly entitled to the data you entered, important meta data is not included, like your relationships to other users on the platform, for example followers
+				</aside>
 			</section>
 
 			<section>
@@ -232,6 +245,9 @@
 					<li class="fragment">Choice inside the WordPress ecosystem (plugins)</li>
 					<li class="fragment">Many platforms import from WordPress</li>
 				</ul>
+				<aside class="notes">
+					Inside WordPress there is choice: often several alternatives are available for similar tasks and specific use cases<br>
+					And WordPress is a bit of a lingua france for CMSs, many platforms can import from it
 			</section>
 
 			<section>
@@ -265,16 +281,22 @@
 					</li>
 					<li class="fragment">→ Not highly maintained</li>
 				</ul>
+				<aside class="notes">
+					Because most often importing is a one-time action, if there are any problems people opt to fix it for themselves but often not report or even contribute a fix for any bugs they encounter<br>
+					This results in them not being very well maintained
 			</section>
 
 			<section>
 				<h2>Data Representation</h2>
 
 				<ul style="text-align: center">
-					<li class="fragment" data-fragment-index="1">Import from Platform Export Files</li>
+					<li class="fragment" data-fragment-index="1">Import of platform-specific export files</li>
 					<li class="fragment" data-fragment-index="2">vs.</li>
-					<li class="fragment" data-fragment-index="2">Export File for WordPress</li>
+					<li class="fragment" data-fragment-index="2">Export of a file specifically for WordPress</li>
 				</ul>
+
+				<aside class="notes">
+					How is the data represented for a transfer? There are two ways to do it
 			</section>
 
 			<section>
@@ -286,6 +308,12 @@
 					<li class="fragment">Change over time</li>
 					<li class="fragment">→ Needs maintenance</li>
 				</ul>
+				<aside class="notes">
+					Every platform has their own file format.<br>
+					There is no incentives for platforms to define a common standard.<br>
+					Export files evolve with their platforms<br>
+					So if a importer works today might be broken in a couple of weeks
+				</aside>
 			</section>
 
 			<section>
@@ -293,10 +321,15 @@
 
 				<ul>
 					<li class="fragment">Platforms don't provide <u>W</u>ordPress e<u>X</u>tended <u>R</u>SS files</li>
-					<li class="fragment">Transform platform exports into WXR?</li>
+					<li class="fragment">→ Transform platform exports into WXR files?</li>
 					<li class="fragment">WXR format is text-only (no attachments)</li>
 					<li class="fragment">Content-types not supported by WordPress natively → ?</li>
 				</ul>
+
+				<aside class="notes">
+					Because WXR is text-only, any attachments need to be accessible to download them.<br>
+					And because WordPress does not support all content types natively, what shall we do with those types of content?
+				</aside>
 			</section>
 
 			<section>
@@ -304,12 +337,12 @@
 			</section>
 
 			<section>
-				<h2>WordPress Playground</h2>
+				<h2>WordPress Playground?</h2>
 
 				<ul>
 					<li class="fragment">WordPress running in the browser</li>
-					<li class="fragment">No server-side code running</li>
-					<li class="fragment">Can run offline</li>
+					<li class="fragment">No server-side code running → sandbox</li>
+					<li class="fragment">Many ways to tailor to your needs</li>
 				</ul>
 			</section>
 
@@ -341,6 +374,9 @@
 					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/developers/apis/javascript-api">Javascript API</a>: Embed and control it</li>
 					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/blueprints/">Blueprints</a>: For complexer setups</li>
 				</ul>
+				<aside class="notes">
+					Make it yours by using these APIs
+				</aside>
 			</section>
 
 			<section>
@@ -350,9 +386,9 @@
 					<li class="fragment">playground.wordpress.net/<a target="_blank" href="https://playground.wordpress.net/?plugin=friends" class="highlight">?plugin=friends</a></li>
 					<li class="fragment">playground.wordpress.net/<a target="_blank" href="https://playground.wordpress.net/?theme=tove" class="highlight">?theme=tove</a></li>
 					<li class="fragment">playground.wordpress.net/<a target="_blank" href="https://playground.wordpress.net/?language=nl_NL" class="highlight">?language=nl_NL</a></li>
-					<li class="fragment">playground.wordpress.net/<a target="_blank" href="https://playground.wordpress.net/?wp=nightly" class="highlight">?wp=nightly</a></li>
+					<li class="fragment">playground.wordpress.net/<a target="_blank" href="https://playground.wordpress.net/?wp=nightly" class="highlight">?wp=nightly</a> or <a target="_blank" href="https://playground.wordpress.net/?wp=6.7" class="highlight">?wp=6.7</a></li>
 					<li class="fragment">playground.wordpress.net/<a target="_blank" href="https://playground.wordpress.net/?mode=seamless" class="highlight">?mode=seamless</a></li>
-					<li class="fragment">... <span class="fragment">?multisite=yes</span> <span class="fragment">... ?url=/landingpage</span> <span class="fragment">... ?blueprint-url=</span></li>
+					<li class="fragment">?multisite=yes <span class="fragment">... ?url=/landingpage</span> <span class="fragment">... ?blueprint-url=</span></li>
 					<li class="fragment">Combine like this: ?plugin=chatrix<span class="highlight">&amp;</span>theme=neve</li>
 				</ul>
 			</section>
@@ -374,17 +410,17 @@
 				<h2>Playground as a Demo Tool</h2>
 
 				<ul>
-					<li class="fragment">Functional Preview of your Plugin
+					<li class="fragment">Convince people: show a preconfigured plugin
 						<ul>
 							<li class="arrow"><a target="_blank" href="https://alex.kirk.at/2024/09/06/enhance-your-wordpress-plugin-add-live-preview/">Add a blueprint to your plugin assets</a></li>
 						</ul>
 					</li>
-					<li class="fragment">Link a full demo WordPress
+					<li class="fragment">Preview a full demo WordPress site to a client
 						<ul>
-							<li class="arrow">Configure with a blueprint:<br> content, plugins, theme, ...</li>
+							<li class="arrow">Send a preconfigured link with:<br>content, plugins, theme, ...</li>
 						</ul>
 					</li>
-					<li class="fragment">Embed WordPress in a block <ul>
+					<li class="fragment">Embed WordPress in a post/page with a block <ul>
 						<li class="arrow"><a target="_blank" href="https://wordpress.org/plugins/interactive-code-block/">WordPress Playground Block</a></li>
 					</ul></li>
 				</ul>
@@ -393,6 +429,9 @@
 			<section>
 				<h2>Provide a Preview of Your Plugin</h2>
 				<img src="img/friends-plugin-preview.png" alt="Showcase the Live Preview button on a plugins page">
+				<aside class="notes">
+					Here you can see the Live Preview button which appears after you have added a blueprint.json file to your plugin's assets.
+				</aside>
 			</section>
 
 			<section>
@@ -402,10 +441,10 @@
 					<li class="fragment">Pre-Configure WordPress with plugins, theme, site data <ul>
 						<li class="arrow">a single <a href="https://playground.wordpress.net/">playground.wordpress.net</a> link</li>
 					</ul></li>
-					<li class="fragment">Blueprint = JSON file with "steps", for example:<br>
+					<li class="fragment">blueprint.json = JSON file with "steps", for example:<br>
 						<tt>{ "step": "installPlugin", "slug": "friends" }</tt></li>
 					<li class="fragment">
-						<a href="https://wordpress.github.io/wordpress-playground/blueprints/steps/">27 different types of steps available</a></li>
+						<a href="https://wordpress.github.io/wordpress-playground/blueprints/steps/">27 different types of steps available</a>: writeFile, runPHP, ...</li>
 					<li class="fragment">Visual Tool: <a target="_blank" href="https://akirk.github.io/playground-step-library/">Playground Step Library</a><ul>
 						<li class="arrow">Provides more easy to use &amp; powerful steps</li>
 					</ul></li>
@@ -420,18 +459,30 @@
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fstylish-press%2Fblueprint.json&random=apafbcqkwf">A Woo store with custom theme, content, and products</a></li>
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fcreate-block-theme%2Fblueprint.json&random=apafbcqkwf">Use the Create Block Theme and start editing right away</a></li>
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fwpgraphql%2Fblueprint.json&random=apafbcqkwf">WPGraphQL to query WordPress</a></li>
-					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fposts-via-wp-cli%2Fblueprint.json&random=apafbcqkwf">Use wp-cli command to add posts</a></li>
-					<li class="fragment">20 more and growing</li>
+					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fposts-via-wp-cli%2Fblueprint.json&random=apafbcqkwf">Use a wp-cli command to add posts</a></li>
+					<li class="fragment">→ Check out <a href="https://playground.wordpress.net/">20 more</a> with more in the pipeline</li>
 				</ul>
-
+				<aside class="notes">
+					To see what's possible with playground, there is a Blueprint Gallery where with the click of a button you can try several different setups of WordPress, all established just with a single blueprint.json configuration file
+				</aside>
 			</section>
 
 			<section>
 				<video data-autoplay data-src="img/blueprints-gallery.mp4" type="video/mp4" alt="Blueprints Gallery Demo: playground.wordpress.net, launch new WordPresses through the gallery"></video>
+				<aside class="notes">
+					This is how you can reach the blueprint gallery
+				</aside>
 			</section>
 
 			<section>
 				<video data-autoplay data-src="img/step-library-demo.mp4" type="video/mp4" alt="Step Library Demo: Add some steps, load playground"></video>
+				<aside class="notes">
+					The steps in the Step Library describe steps that themselves can be made up of multiple steps to achieve more complex tasks.<br>
+					This can serve both as an inspiration for how the steps that are available by WordPress Playground itself can be used in creative ways.<br>
+					Here you can see a few demos of how to use it. First, we use the Friends plugin to view the WordCamp Netherlands news.<br>
+					Next we build a demo of a plugin with a custom block.<br>
+					Finally: Hello!
+				</aside>
 			</section>
 
 			<section>
@@ -455,6 +506,10 @@
 
 			<section>
 				<video data-autoplay data-src="img/try-wordpress-interface.mp4" type="video/mp4" alt="Try WordPress Interface"></video>
+				<aside class="notes">
+					This is the browser extension Try WordPress: You open the sidebar with this icon.<br>
+					In this section you can start the liberation when you're ready.<br>
+					When you have liberated a post, the live preview appears.
 			</section>
 
 			<section>
@@ -479,17 +534,17 @@
 					<li class="fragment">Contact Forms</li>
 					<li class="fragment">Restaurant Menus</li>
 					<li class="fragment">Products</li>
-					<li class="fragment">→ WordPress cannot handle that natively!</li>
+					<li class="fragment">→ WordPress cannot handle those natively!</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Plugins can handle these types!</h2>
+				<h2>But Plugins can!</h2>
 
 				<ul>
 					<li class="fragment">Liberate Data = Free choice</li>
-					<li class="fragment">Select your favorite plugin for XYZ</li>
-					<li class="fragment">Fails? Try another plugin and try again</li>
+					<li class="fragment">Select your favorite plugin for a content type</li>
+					<li class="fragment">Doesn't work? Other plugins are available</li>
 				</ul>
 			</section>
 
@@ -499,9 +554,13 @@
 				<ul>
 					<li class="fragment">Logged in = access to your view of your data</li>
 					<li class="fragment">Logged in = access to the service's own APIs</li>
-					<li class="fragment">No blocking: User entitled to view their own site</li>
+					<li class="fragment">No IP blocking: User entitled to view their own site</li>
 					<li class="fragment">Live Preview of imported data</li>
-					<li class="fragment">Interactive while importing: choose a plugin</li>
+					<li class="fragment">Interactive while importing:
+						<ul>
+							<li>See progress, choose a plugin, edit posts</li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 
@@ -544,17 +603,16 @@
 				<h2>After the liberation</h2>
 
 				<ul>
-					<li class="fragment">View full-screen on <a href="https://playground.wordpress.net/">playground.wordpress.net</a></li>
-					<li class="fragment">Export to a hosted WordPress</li>
+					<li class="fragment">View it full-screen on <a href="https://playground.wordpress.net/">playground.wordpress.net</a></li>
+					<li class="fragment">Export to a hosted WordPress (WIP)</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>How you can help</h2>
-				<p>(Work in progress)</p>
+				<h2>Paths to contribute</h2>
 				<ul>
 					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress/blob/docs-definitions/definitions.md">Share your assisted export</a> (types + selectors)</li>
-					<li class="fragment">Review submitted assisted exports</li>
+					<li class="fragment">Help review those submitted assisted exports</li>
 					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress/blob/docs/extend/EXTEND.md">Make your plugin ready to receive liberated data</a>
 						<ul><li>add_action( 'liberated_data_{$type}', ...</li></ul></li>
 					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress/discussions/">Join the discussions</a> on try-wordpress</li>
@@ -595,7 +653,7 @@
 
 			<section data-transition="fade-in slide-out">
 				<h4>Why bother? Platforms have Data exports!</h4>
-				<h2>Only some do, and often omit the valuable meta data like relationships</h2>
+				<h2>But only some, they often omit the valuable meta data</h2>
 			</section>
 
 			<section>
