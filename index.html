@@ -449,7 +449,6 @@
 			</section>
 
 			<section>
-				<h2>Try WordPress Interface</h2>
 				<video data-autoplay data-src="img/try-wordpress-interface.mp4" type="video/mp4" alt="Try WordPress Interface"></video>
 			</section>
 
@@ -462,25 +461,25 @@
 				<h2>Liberating Data with Playground</h2>
 
 				<ul>
-					<li class="fragment">Browser has access your data (logged in)</li>
-					<li class="fragment">You tell the extension which data to liberate</li>
+					<li class="fragment">You navigate to the site → No URLs</li>
+					<li class="fragment">You help locate the data → Universal</li>
 					<li class="fragment">Data gets directly sent to WordPress (Playground)</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>WordPress cannot handle natively</h2>
+				<h2>What about</h2>
 
 				<ul>
 					<li class="fragment">Contact Forms</li>
 					<li class="fragment">Restaurant Menus</li>
 					<li class="fragment">Products</li>
-					<li class="fragment">...</li>
+					<li class="fragment">→ WordPress cannot handle that natively!</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Plugins can handle that!</h2>
+				<h2>Plugins can handle these types!</h2>
 
 				<ul>
 					<li class="fragment">Liberate Data = Free choice</li>
@@ -488,6 +487,19 @@
 					<li class="fragment">Fails? Try another plugin and try again</li>
 				</ul>
 			</section>
+
+			<section>
+				<h2>But why export in the browser?</h2>
+
+				<ul>
+					<li class="fragment">Logged in = access to your view of your data</li>
+					<li class="fragment">Logged in = access to the service's own APIs</li>
+					<li class="fragment">No blocking: User views their own site</li>
+					<li class="fragment">Live Preview</li>
+					<li class="fragment">Interactive while importing: choose a plugin</li>
+				</ul>
+			</section>
+
 
 			<section>
 				<h4>Traditional Export/Import</h4>
@@ -518,7 +530,7 @@
 				<ul>
 					<li class="fragment"><a target="_blank" href="https://github.com/WordPress/try-wordpress">https://github.com/WordPress/try-wordpress</a></li>
 					<li class="fragment">Currently: Firefox or Chrome</li>
-					<li class="fragment">Loads playground.wordpress.net in the sidebar</li>
+					<li class="fragment">Loads <a href="https://playground.wordpress.net/">playground.wordpress.net</a> in the sidebar</li>
 					<li class="fragment">Assisted export from any website</li>
 				</ul>
 			</section>
@@ -527,7 +539,7 @@
 				<h2>After the liberation</h2>
 
 				<ul>
-					<li class="fragment">View and try it directly on playground.wordpress.net</li>
+					<li class="fragment">View full-screen on <a href="https://playground.wordpress.net/">playground.wordpress.net</a></li>
 					<li class="fragment">Export to a hosted WordPress</li>
 				</ul>
 			</section>
@@ -536,10 +548,11 @@
 				<h2>How you can help</h2>
 				<p>(Work in progress)</p>
 				<ul>
-					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress/blob/docs-definitions/definitions.md">Share your assisted export</a></li>
-					<li class="fragment">Review assisted exports</li>
-					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress/blob/docs/extend/EXTEND.md">Make your plugin ready to receive liberated data</a></li>
-					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress/discussions/">Join the discussions</a></li>
+					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress/blob/docs-definitions/definitions.md">Share your assisted export</a> (types + selectors)</li>
+					<li class="fragment">Review submitted assisted exports</li>
+					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress/blob/docs/extend/EXTEND.md">Make your plugin ready to receive liberated data</a>
+						<ul><li>add_action( 'liberated_data_{$type}', ...</li></ul></li>
+					<li class="fragment"><a href="https://github.com/WordPress/try-wordpress/discussions/">Join the discussions</a> on try-wordpress</li>
 				</ul>
 			</section>
 
