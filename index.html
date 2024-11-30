@@ -247,7 +247,7 @@
 				</ul>
 				<aside class="notes">
 					Inside WordPress there is choice: often several alternatives are available for similar tasks and specific use cases<br>
-					And WordPress is a bit of a lingua france for CMSs, many platforms can import from it
+					And WordPress is a bit of a lingua franca for CMSs, many platforms can import from it
 			</section>
 
 			<section>
@@ -341,6 +341,7 @@
 
 				<ul>
 					<li class="fragment">WordPress running in the browser</li>
+					<li class="fragment">Technology: WebAssembly, JavaScript, SQLite</li>
 					<li class="fragment">No server-side code running → sandbox</li>
 					<li class="fragment">Many ways to tailor to your needs</li>
 				</ul>
@@ -371,8 +372,8 @@
 
 				<ul style="text-align: center">
 					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/developers/apis/query-api">Query API</a>: Set it up via URL</li>
-					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/developers/apis/javascript-api">Javascript API</a>: Embed and control it</li>
-					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/blueprints/">Blueprints</a>: For complexer setups</li>
+					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/developers/apis/javascript-api">JavaScript API</a>: Embed and control it</li>
+					<li class="fragment"><a target="_blank" href="https://wordpress.github.io/wordpress-playground/blueprints/">Blueprints</a>: For more complex setups</li>
 				</ul>
 				<aside class="notes">
 					Make it yours by using these APIs
@@ -452,6 +453,18 @@
 				</ul>
 			</section>
 
+
+			<section>
+				<video data-autoplay data-src="img/step-library-demo.mp4" type="video/mp4" alt="Step Library Demo: Add some steps, load playground"></video>
+				<aside class="notes">
+					The steps in the Step Library describe steps that themselves can be made up of multiple steps to achieve more complex tasks.<br>
+					This can serve both as an inspiration for how the steps that are available by WordPress Playground itself can be used in creative ways.<br>
+					Here you can see a few demos of how to use it. First, we use the Friends plugin to view the WordCamp Netherlands news.<br>
+					Next we build a demo of a plugin with a custom block.<br>
+					Finally: Hello!
+				</aside>
+			</section>
+
 			<section>
 				<h2>Showcase: <a target="_blank" href="https://github.com/WordPress/blueprints/">Blueprints Gallery</a></h2>
 				<ul>
@@ -460,7 +473,7 @@
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fcreate-block-theme%2Fblueprint.json&random=apafbcqkwf">Use the Create Block Theme and start editing right away</a></li>
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fwpgraphql%2Fblueprint.json&random=apafbcqkwf">WPGraphQL to query WordPress</a></li>
 					<li class="fragment"><a target="_blank" href="https://playground.wordpress.net/?name=Blueprint+preview&blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2FWordPress%2Fblueprints%2Ftrunk%2Fblueprints%2Fposts-via-wp-cli%2Fblueprint.json&random=apafbcqkwf">Use a wp-cli command to add posts</a></li>
-					<li class="fragment">→ Check out <a href="https://playground.wordpress.net/">20 more</a> with more in the pipeline</li>
+					<li class="fragment">→ Check out <a href="https://playground.wordpress.net/">the 25 blueprints</a> with more in the pipeline</li>
 				</ul>
 				<aside class="notes">
 					To see what's possible with playground, there is a Blueprint Gallery where with the click of a button you can try several different setups of WordPress, all established just with a single blueprint.json configuration file
@@ -471,17 +484,6 @@
 				<video data-autoplay data-src="img/blueprints-gallery.mp4" type="video/mp4" alt="Blueprints Gallery Demo: playground.wordpress.net, launch new WordPresses through the gallery"></video>
 				<aside class="notes">
 					This is how you can reach the blueprint gallery
-				</aside>
-			</section>
-
-			<section>
-				<video data-autoplay data-src="img/step-library-demo.mp4" type="video/mp4" alt="Step Library Demo: Add some steps, load playground"></video>
-				<aside class="notes">
-					The steps in the Step Library describe steps that themselves can be made up of multiple steps to achieve more complex tasks.<br>
-					This can serve both as an inspiration for how the steps that are available by WordPress Playground itself can be used in creative ways.<br>
-					Here you can see a few demos of how to use it. First, we use the Friends plugin to view the WordCamp Netherlands news.<br>
-					Next we build a demo of a plugin with a custom block.<br>
-					Finally: Hello!
 				</aside>
 			</section>
 
@@ -677,7 +679,7 @@
 			progress: false,
 			hash: true,
 			autoPlayMedia: true,
-			slideNumber: 'c/t',
+			// slideNumber: 'c/t',
 			width: 1200,
 			plugins: [ RevealNotes, RevealSearch ]
 		}).then( () => {
